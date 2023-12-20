@@ -2,15 +2,16 @@
 
 const nextConfig = {
     compiler: {
+        styledComponents: true,
         removeConsole: {
-            exclude: ["error"]
-        }
+            exclude: ["error"],
+        },
     },
     staticPageGenerationTimeout: 0,
     reactStrictMode: true,
     eslint: {
-        dirs: ["."]
-    }
-}
+        dirs: ["."],
+    },
+};
 
 module.exports = nextConfig;
