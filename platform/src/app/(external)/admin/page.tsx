@@ -1,4 +1,4 @@
-import { Setup } from "@/app/(external)/admin/_components/setup";
+import { FirstAccess } from "@/app/(external)/admin/_components/firstAccess";
 
 import { Panel } from "./_components/panel";
 
@@ -7,7 +7,8 @@ export default function Home() {
         <main>
             <Panel>
                 {/* <Login /> */}
-                <Setup />
+                {/* <Setup /> */}
+                <FirstAccess />
             </Panel>
         </main>
     );
