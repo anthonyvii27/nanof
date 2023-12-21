@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 
-export const Root = styled.section`
+export const Root = styled.main`
     width: 800px;
     min-height: 450px;
     background: ${({ theme }) => theme.colors.gray10};
@@ -10,6 +10,11 @@ export const Root = styled.section`
     box-shadow: 0 0 20px ${({ theme }) => theme.colors.gray30};
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 850px) {
+        width: 100%;
+        display: block;
+    }
 `;
 
 export const Image = styled.div`
@@ -20,6 +25,10 @@ export const Image = styled.div`
     background-size: cover;
     background-position: center;
     filter: opacity(60%);
+
+    @media (max-width: 850px) {
+        display: none;
+    }
 `;
 
 export const Content = styled.div`

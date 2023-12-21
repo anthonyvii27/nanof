@@ -12,6 +12,7 @@ export const Root = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
+    padding: 20px;
 `;
 
 export const StatusPanel = styled.main`
@@ -24,6 +25,12 @@ export const StatusPanel = styled.main`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: 900px) {
+        width: 100%;
+        min-height: 120px;
+        height: max-content;
+    }
 `;
 
 export const Tag = styled.span`
@@ -49,6 +56,12 @@ export const Text = styled.span`
         font-weight: ${theme.fontWeight.regular};
         font-family: ${theme.fontFamily.inter};
         letter-spacing: ${theme.letterSpacing.sm};
+
+        @media (max-width: 430px) {
+            > &:last-child {
+                margin-top: 20px;
+            }
+        }
     `}
 `;
 

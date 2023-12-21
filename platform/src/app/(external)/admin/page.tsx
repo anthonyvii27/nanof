@@ -5,14 +5,12 @@ import { Panel } from "./_components/panel";
 
 const Admin = (): ReactElement => {
     return (
-        <main>
-            <Panel>
-                <Login />
-                {/* <Setup /> */}
-                {/* <FirstAccess /> */}
-                {/* <ForgotPassword /> */}
-            </Panel>
-        </main>
+        <Panel>
+            <Login />
+            {/* <Setup /> */}
+            {/* <FirstAccess /> */}
+            {/* <ForgotPassword /> */}
+        </Panel>
     );
 };
 

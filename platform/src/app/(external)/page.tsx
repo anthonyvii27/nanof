@@ -23,7 +23,7 @@ const Home = (): ReactElement => {
                         alignItems: "center",
                         justifyContent: "space-between",
                         flexWrap: "wrap",
-                        gap: "7px",
+                        gap: "10px",
                     }}
                 >
                     <Tag>PRODUCTION</Tag>
