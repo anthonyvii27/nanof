@@ -2,8 +2,8 @@ html,
 body {
     min-height: 100%;
     height: 100%;
-    font-size: 15px;
-    background-color: #FFF;
+    font-size: 14px !important;
+    background-color: #ECEDEE;
 }
 
 * {
