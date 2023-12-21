@@ -1,15 +1,19 @@
-import { FirstAccess } from "@/app/(external)/admin/_components/firstAccess";
+import { Login } from "@/app/(external)/admin/_views/login";
+import { ReactElement } from "react";
 
 import { Panel } from "./_components/panel";
 
-export default function Home() {
+const Admin = (): ReactElement => {
     return (
         <main>
             <Panel>
-                {/* <Login /> */}
+                <Login />
                 {/* <Setup /> */}
-                <FirstAccess />
+                {/* <FirstAccess /> */}
+                {/* <ForgotPassword /> */}
             </Panel>
         </main>
     );
-}
+};
+
+export default Admin;

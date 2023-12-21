@@ -28,7 +28,7 @@ export const InputContainer = styled("input").attrs<IFieldProps>(({ tag }) => ({
     ${({ theme, tag }) => css`
         width: 100%;
         background-color: ${theme.colors.gray10};
-        border: 1px solid ${theme.colors.gray40};
+        border: 1px solid ${theme.colors.gray50};
         color: ${theme.colors.gray90};
         font-size: ${theme.fontSize.default};
         font-weight: ${theme.fontWeight.regular};

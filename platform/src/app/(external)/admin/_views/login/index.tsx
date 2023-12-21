@@ -1,4 +1,5 @@
 import { Button } from "@/components/button";
+import { Checkbox } from "@/components/checkbox";
 import { Input } from "@/components/input";
 import { ReactElement } from "react";
 
@@ -13,15 +14,18 @@ const Login = (): ReactElement => {
                 <Input.Label fieldId="email">E-mail</Input.Label>
                 <Input.Field id="email" type="text" max={64} />
             </Input>
-            <Input>
-                <Input.Label fieldId="password">Password</Input.Label>
-                <Input.Field id="password" type="password" max={64} />
-            </Input>
+            <>
+                <Input>
+                    <Input.Label fieldId="password">Password</Input.Label>
+                    <Input.Field id="password" type="password" max={64} />
+                </Input>
+                <Checkbox id="remember-me" label="Remember me" />
+            </>
 
             <div style={{ marginTop: "5px" }} />
             <Button full>Sign In</Button>
 
-            <ForgotPassword href="#">Forgot password?</ForgotPassword>
+            <ForgotPassword href="/admin/forgot">Forgot password?</ForgotPassword>
         </Root>
     );
 };

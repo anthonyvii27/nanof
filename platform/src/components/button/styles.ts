@@ -33,6 +33,9 @@ export const PolymorphicComponent = styled(Slot)<{ full: boolean }>`
     `}
 `;
 
-export const StyledButton = styled.button`
+export const StyledButton = styled.button<{ full: boolean }>`
     ${CommonStyles};
+    ${({ full }) => css`
+        width: ${!full ? "max-content" : "100%"};
+    `}
 `;

@@ -4,5 +4,5 @@ import { CoreTheme } from "@/theme/core";
 type Theme = typeof CoreTheme;
 
 declare module "styled-components" {
-    export interface DefaultTheme extends Theme {}
+    export interface IDefaultTheme extends Theme {}
 }
