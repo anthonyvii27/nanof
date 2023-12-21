@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const Root = styled.section`
     width: 800px;
-    height: 500px;
+    height: 450px;
     background: ${({ theme }) => theme.colors.gray10};
     border-bottom: 10px solid ${({ theme }) => theme.colors.lighterCyan};
     box-shadow: 0 0 20px ${({ theme }) => theme.colors.gray40};

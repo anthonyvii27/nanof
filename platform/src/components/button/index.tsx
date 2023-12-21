@@ -12,6 +12,7 @@ export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 const Button = ({ children, asChild = false, ...props }: IButtonProps): ReactElement => {
     const Comp = asChild ? PolymorphicComponent : StyledButton;
 
+    // @ts-ignore
     return <Comp {...props}>{children}</Comp>;
 };
 
