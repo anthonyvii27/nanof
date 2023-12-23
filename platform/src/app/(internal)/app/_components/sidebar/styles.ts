@@ -1,6 +1,6 @@
 "use client";
 
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Root = styled.aside`
     width: 300px;
@@ -17,4 +17,53 @@ export const Root = styled.aside`
         transform: translateX(0);
         transition: 0.3s ease-in;
     }
+`;
+
+export const GroupTitle = styled.h2`
+    ${({ theme }) => css`
+        color: ${theme.colors.lighterCyan};
+        font-size: ${theme.fontSize.default};
+        font-family: ${theme.fontFamily.inter};
+        letter-spacing: ${theme.letterSpacing.default};
+        font-weight: ${theme.fontWeight.bold};
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        padding: 20px;
+    `}
+`;
+
+export const Options = styled.ul`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+`;
+
+export const Option = styled.li`
+    ${({ theme }) => css`
+        width: 100%;
+        height: 50px;
+        padding: 0 15px;
+        color: ${theme.colors.darkestGray};
+        font-size: ${theme.fontSize.default};
+        font-family: ${theme.fontFamily.inter};
+        letter-spacing: ${theme.letterSpacing.default};
+        font-weight: ${theme.fontWeight.medium};
+        border-left: 5px solid transparent;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &:hover {
+            border-left: 5px solid ${theme.colors.gray70};
+            background: ${theme.colors.gray50};
+            cursor: pointer;
+        }
+
+        &[data-state="true"] {
+            background: ${theme.colors.gray50};
+            border-left: 5px solid ${theme.colors.lighterCyan};
+        }
+    `}
 `;
