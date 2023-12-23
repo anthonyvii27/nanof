@@ -1,6 +1,7 @@
 "use client";
 
 import { IReactChildren } from "@/app/_interfaces/core";
+import { usePathname } from "next/navigation";
 import React, { createContext, useContext, useState } from "react";
 
 interface ISidebarContextProps {
@@ -10,12 +11,17 @@ interface ISidebarContextProps {
 
 const SidebarContext = createContext<ISidebarContextProps | undefined>(undefined);
 
-export const useSidebar = (): ISidebarContextProps => {
+interface IUseSidebar extends ISidebarContextProps {
+    selectedOption: string;
+}
+
+export const useSidebar = (): IUseSidebar => {
+    const pathname = usePathname();
     const context = useContext(SidebarContext);
 
     if (!context) throw new Error("useSidebar must be used within a SidebarProvider");
 
-    return context;
+    return { ...context, selectedOption: pathname };
 };
 
 interface ISidebarProviderProps extends IReactChildren {}
