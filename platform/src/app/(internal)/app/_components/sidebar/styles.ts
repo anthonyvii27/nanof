@@ -11,10 +11,10 @@ export const Root = styled.aside`
     top: 50px;
     left: 0;
     transform: translateX(-300px);
-    transition: 0.2s ease-out;
+    transition: 0.3s ease-out;
 
-    &:hover {
+    &[data-state="true"] {
         transform: translateX(0);
-        transition: 0.2s ease-in;
+        transition: 0.3s ease-in;
     }
 `;
