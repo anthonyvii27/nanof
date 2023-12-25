@@ -2,6 +2,6 @@ import { ReactElement } from "react";
 
 import { Root } from "./styles";
 
-const Editor = (): ReactElement => <Root>EDditor</Root>;
+const Config = (): ReactElement => <Root>Config</Root>;
 
-export { Editor };
+export { Config };

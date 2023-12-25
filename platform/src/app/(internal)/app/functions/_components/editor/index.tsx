@@ -1,5 +1,7 @@
 import { ReactElement } from "react";
 
-const List = (): ReactElement => <h1>List</h1>;
+import { Root } from "./styles";
 
-export { List };
+const Editor = (): ReactElement => <Root>EDditor</Root>;
+
+export { Editor };

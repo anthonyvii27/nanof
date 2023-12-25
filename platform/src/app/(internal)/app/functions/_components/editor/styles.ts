@@ -1,9 +1,11 @@
 "use client";
 
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Root = styled.div`
-    width: 100%;
-    height: 100%;
-    background: red;
+    ${({ theme }) => css`
+        width: 100%;
+        height: 100%;
+        background: ${theme.colors.gray10};
+    `}
 `;

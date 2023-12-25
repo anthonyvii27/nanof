@@ -5,7 +5,7 @@ import styled, { css } from "styled-components";
 
 export const CommonStyles = css`
     ${({ theme }) => css`
-        padding: 7px 20px;
+        padding: 7px 15px;
         background: ${theme.colors.lighterCyan};
         border: none;
         font-family: ${theme.fontFamily.inter};
@@ -15,6 +15,10 @@ export const CommonStyles = css`
         height: 42px;
         border-radius: 4px;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
 
         &:focus {
             outline: 1px solid ${theme.colors.darkestCyan};
