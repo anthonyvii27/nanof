@@ -23,7 +23,7 @@ const Timer = (): ReactElement => {
         <Root>
             <Text>
                 <MdOutlineAvTimer size={15} />
-                <strong>Horário atual</strong>
+                <strong>Current Time</strong>
             </Text>
             <Text>{formattedDateTime}</Text>
         </Root>

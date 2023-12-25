@@ -16,7 +16,7 @@ const Sidebar = (): ReactElement => {
 
     return (
         <Root data-state={isSidebarOpen}>
-            <GroupTitle>Gerenciamento</GroupTitle>
+            <GroupTitle>Management</GroupTitle>
             <Options>
                 <Option
                     data-state={selectedOption === "/app/functions"}
@@ -32,7 +32,7 @@ const Sidebar = (): ReactElement => {
                     >
                         <RiFunctionLine size={20} />
                     </span>
-                    Funções
+                    Functions
                 </Option>
                 <Option
                     data-state={selectedOption === "/app/connectors"}
@@ -48,7 +48,7 @@ const Sidebar = (): ReactElement => {
                     >
                         <MdOutlineSettingsInputComponent size={18} />
                     </span>
-                    Conectores
+                    Connectors
                 </Option>
                 <Option
                     data-state={selectedOption === "/app/users"}
@@ -64,7 +64,7 @@ const Sidebar = (): ReactElement => {
                     >
                         <FaRegUserCircle size={18} />
                     </span>
-                    Usuários
+                    Users
                 </Option>
             </Options>
         </Root>

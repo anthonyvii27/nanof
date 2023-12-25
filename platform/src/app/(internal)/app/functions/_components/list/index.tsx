@@ -9,7 +9,7 @@ import { Root, Title, Search, ListContainer } from "./styles";
 
 const List = (): ReactElement => (
     <Root>
-        <Title>Funções</Title>
+        <Title>Functions</Title>
         <div style={{ padding: "20px", display: "flex", alignItems: "center", gap: "10px" }}>
             <Search>
                 <IoSearch id="icon-search" size={18} color={CoreTheme.colors.gray60} />
@@ -17,6 +17,7 @@ const List = (): ReactElement => (
             </Search>
             <Button>
                 <IoMdAdd size={20} />
+                New
             </Button>
         </div>
         <ListContainer>
